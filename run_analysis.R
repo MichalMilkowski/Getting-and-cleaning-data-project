@@ -1,6 +1,6 @@
 ###setting directory
-setwd("D:/COURSERA/Data science/Getting and Cleaning Data/PROJECT")
-getwd()
+#setwd("D:/COURSERA/Data science/Getting and Cleaning Data/PROJECT")
+#getwd()
 
 #################################################
 #     task 1
@@ -181,4 +181,4 @@ dataset_tidy<-ddply(data_all,.(subject,desc_activity_name),
 names(dataset_tidy)[3:68]<-names2
 
 #writing the tidy dataset
-write.table(dataset_tidy,"tidy_dataset.txt")
+write.table(dataset_tidy,"tidy_dataset.txt",row.names='FALSE')
